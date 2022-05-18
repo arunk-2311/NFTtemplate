@@ -1,0 +1,15 @@
+compiler:
+  solc:
+    remappings:
+    - '@openzeppelin=OpenZeppelin/openzeppelin-contracts@4.4.2'
+
+dependencies:
+  - OpenZeppelin/openzeppelin-contracts@4.4.2
+  - Brechtpd/base64@1.1.0
+
+dotenv: .env
+networks:
+  rinkeby:
+    verify: True
+wallets:
+  from_key: ${PRIVATE_KEY}
